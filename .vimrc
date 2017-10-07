@@ -7,6 +7,8 @@ Plug 'rhysd/vim-clang-format'
 Plug 'jiangmiao/simple-javascript-indenter'
 " Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'itchyny/lightline.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-endwise'
 call plug#end()
 
 set encoding=utf-8
@@ -76,4 +78,5 @@ if executable('clang-format-3.9')
   autocmd FileType c ClangFormatAutoEnable
 endif
 
-
+" 挿入モードから抜けるとIMEをオフ
+" set imdisable
