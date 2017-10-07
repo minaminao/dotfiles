@@ -9,6 +9,7 @@ Plug 'jiangmiao/simple-javascript-indenter'
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-endwise'
+Plug 'nathanaelkane/vim-indent-guides'
 call plug#end()
 
 set encoding=utf-8
@@ -80,3 +81,6 @@ endif
 
 " 挿入モードから抜けるとIMEをオフ
 " set imdisable
+
+" vim-indent-guides を起動時に on
+let g:indent_guides_enable_on_vim_startup = 1
