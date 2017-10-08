@@ -10,6 +10,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-endwise'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 set encoding=utf-8
@@ -71,6 +72,12 @@ set autoread
 " statusline の表示 0:常に非表示 1: 2つ以上のファイルが開かれていたら表示 2: 常に表示
 set laststatus=2
 
+" 挿入モードから抜けるとIMEをオフ
+" set imdisable
+
+" バックアップをとらない
+set nobackup
+
 " clang-format の設定
 if executable('clang-format-3.9')
   " clang-format からclang-format-3.9 へ
@@ -78,9 +85,6 @@ if executable('clang-format-3.9')
   " 保存時に自動でフォーマット
   autocmd FileType c ClangFormatAutoEnable
 endif
-
-" 挿入モードから抜けるとIMEをオフ
-" set imdisable
 
 " vim-indent-guides を起動時に on
 let g:indent_guides_enable_on_vim_startup = 1
