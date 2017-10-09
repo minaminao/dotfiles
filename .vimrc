@@ -33,7 +33,7 @@ set shiftwidth=2
 set autoindent
 set smartindent
 
-" set backspace=indent,eol,start
+set backspace=indent,eol,start
 
 set title
 set ruler
