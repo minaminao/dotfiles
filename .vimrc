@@ -88,3 +88,6 @@ endif
 
 " vim-indent-guides を起動時に on
 let g:indent_guides_enable_on_vim_startup = 1
+
+" 自動でコメントアウトしない
+autocmd Filetype * set formatoptions-=c fo-=o fo-=r
