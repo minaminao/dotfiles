@@ -42,6 +42,8 @@ set ruler
 set number
 " カーソル行を目立たせる
 set cursorline
+" 対応する括弧を強調
+set showmatch
 
 " 検索結果をハイライト
 set hlsearch
@@ -51,10 +53,11 @@ set incsearch
 set ignorecase
 " 検索ワードに大文字が含まれていたら大文字小文字を区別する
 set smartcase
+" 最後まで検索を終えたら先頭へ戻る
+set wrapscan
 
 " 行末で一文字分余分に右移動できる
 set virtualedit=onemore
-" set showcmd
 
 " 行頭行末の左右移動で行をまたぐ
 set whichwrap&
@@ -62,6 +65,8 @@ set whichwrap+=h,l,<,>,[,],b,s
 
 " set clipboard&
 " set clipboard^=unnamedplus
+
+" set showcmd
 
 " 上下n行の視界を確保
 set scrolloff=8
