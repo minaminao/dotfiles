@@ -14,6 +14,7 @@ Plug 'tpope/vim-fugitive'
 call plug#end()
 
 set encoding=utf-8
+set fileencodings=utf-8,cp932
 syntax on 
 
 " 色数
