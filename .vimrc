@@ -67,7 +67,8 @@ set whichwrap+=h,l,<,>,[,],b,s
 " set clipboard&
 " set clipboard^=unnamedplus
 
-" set showcmd
+" 入力中のコマンドを表示
+set showcmd
 
 " 上下n行の視界を確保
 set scrolloff=8
