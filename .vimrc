@@ -22,6 +22,9 @@ Plug 'scrooloose/nerdtree'
 " end を自動入力
 Plug 'tpope/vim-endwise'
 
+" JavaScript
+Plug 'pangloss/vim-javascript'
+
 " Git
 Plug 'tpope/vim-fugitive'
 
