@@ -1,16 +1,33 @@
+" vim-plug
 call plug#begin('~/.vim/plugged')
+
+" 外観
+" colorscheme
 Plug 'w0ng/vim-hybrid'
 Plug 'nanotech/jellybeans.vim'
 Plug 'tomasr/molokai'
-Plug 'kana/vim-operator-user'
-Plug 'rhysd/vim-clang-format'
-Plug 'jiangmiao/simple-javascript-indenter'
-" Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+" statusline を powerline 風に
 Plug 'itchyny/lightline.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-endwise'
+" インデントを見やすく
 Plug 'nathanaelkane/vim-indent-guides'
+
+" format
+" C/C++/Java/JavaScript/Objective-C/Protobuf
+Plug 'rhysd/vim-clang-format'
+
+" ファイルツリー
+Plug 'scrooloose/nerdtree'
+
+" Ruby
+" end を自動入力
+Plug 'tpope/vim-endwise'
+
+" Git
 Plug 'tpope/vim-fugitive'
+
+" その他
+Plug 'kana/vim-operator-user'
+
 call plug#end()
 
 set encoding=utf-8
@@ -90,7 +107,7 @@ if executable('clang-format-3.9')
   " clang-format からclang-format-3.9 へ
   let g:clang_format#command = 'clang-format-3.9'
   " 保存時に自動でフォーマット
-  autocmd FileType c ClangFormatAutoEnable
+  autocmd FileType c,cpp,objc,javascript ClangFormatAutoEnable
 endif
 
 " vim-indent-guides を起動時に on
@@ -98,3 +115,4 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 " 自動でコメントアウトしない
 autocmd Filetype * set formatoptions-=c fo-=o fo-=r
+
