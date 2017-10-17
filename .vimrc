@@ -48,15 +48,20 @@ colorscheme jellybeans
 set expandtab
 " Tab が対応する空白の数
 set tabstop=2
-" インデントに対応する空白の数
+" Tab を空白にし、インデントをバックスペースした時に空白2文字分消せるようにする
+set softtabstop=2
+" 読み込み時のインデントに対応する空白の数
 set shiftwidth=2
 
 set autoindent
 set smartindent
 
+" バックスペースで消せる文字
 set backspace=indent,eol,start
 
+" ファイル名を表示
 set title
+" ルーラーを表示
 set ruler
 
 " 行数を表示
@@ -102,8 +107,12 @@ set laststatus=2
 " 挿入モードから抜けるとIMEをオフ
 " set imdisable
 
-" バックアップをとらない
-set nobackup
+" backupファイルとswapファイルの保存先を変更
+if !isdirectory('vimtmp')
+  call system('mkdir ~/vimtmp')
+endif
+set directory=~/vimtmp
+set backupdir=~/vimtmp
 
 " clang-format の設定
 if executable('clang-format-3.9')
@@ -118,4 +127,14 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 " 自動でコメントアウトしない
 autocmd Filetype * set formatoptions-=c fo-=o fo-=r
+
+" キーマッピング
+" 行移動を直感的に
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
+" 行頭行末移動を楽に
+noremap <Space>h ^
+noremap <Space>l $
 
