@@ -11,6 +11,9 @@ Plug 'itchyny/lightline.vim'
 " インデントを見やすく
 Plug 'nathanaelkane/vim-indent-guides'
 
+" 構文チェック
+Plug 'scrooloose/syntastic'
+
 " format
 " C/C++/Java/JavaScript/Objective-C/Protobuf
 Plug 'rhysd/vim-clang-format'
@@ -138,3 +141,4 @@ nnoremap gk k
 noremap <Space>h ^
 noremap <Space>l $
 
+set mouse=a
