@@ -122,7 +122,7 @@ if executable('clang-format-3.9')
   " clang-format からclang-format-3.9 へ
   let g:clang_format#command = 'clang-format-3.9'
   " 保存時に自動でフォーマット
-  autocmd FileType c,cpp,objc,javascript ClangFormatAutoEnable
+  autocmd FileType c,cpp,objc,java,javascript ClangFormatAutoEnable
 endif
 
 " vim-indent-guides を起動時に on
@@ -142,3 +142,21 @@ noremap <Space>h ^
 noremap <Space>l $
 
 set mouse=a
+
+" タブ、空白、改行の可視化
+set list
+set listchars=tab:>.,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
+
+" 全角スペースをハイライト表示
+function! ZenkakuSpace()
+  highlight ZenkakuSpace cterm=reverse ctermfg=DarkMagenta gui=reverse guifg=DarkMagenta
+endfunction
+
+if has('syntax')
+  augroup ZenkakuSpace
+    autocmd!
+    autocmd ColorScheme       * call ZenkakuSpace()
+    autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
+  augroup END
+  call ZenkakuSpace()
+endif
