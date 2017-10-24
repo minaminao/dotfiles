@@ -160,3 +160,5 @@ if has('syntax')
   augroup END
   call ZenkakuSpace()
 endif
+
+vnoremap * "zy:let @/ = @z<CR>n
