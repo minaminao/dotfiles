@@ -12,7 +12,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 
 " 構文チェック
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 
 " format
 " C/C++/Java/JavaScript/Objective-C/Protobuf
@@ -24,6 +24,9 @@ Plug 'scrooloose/nerdtree'
 " Ruby
 " end を自動入力
 Plug 'tpope/vim-endwise'
+
+" Python
+Plug 'davidhalter/jedi-vim'
 
 " JavaScript
 Plug 'pangloss/vim-javascript'
@@ -162,3 +165,4 @@ if has('syntax')
 endif
 
 vnoremap * "zy:let @/ = @z<CR>n
+
