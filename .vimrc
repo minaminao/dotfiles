@@ -26,7 +26,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-endwise'
 
 " Python
-Plug 'davidhalter/jedi-vim'
+" Plug 'davidhalter/jedi-vim'
 
 " JavaScript
 Plug 'pangloss/vim-javascript'
