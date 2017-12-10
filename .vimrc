@@ -144,7 +144,7 @@ nnoremap gk k
 noremap <Space>h ^
 noremap <Space>l $
 
-set mouse=a
+" set mouse=a
 
 " タブ、空白、改行の可視化
 set list
