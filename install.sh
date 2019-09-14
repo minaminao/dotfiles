@@ -6,12 +6,13 @@ set -e
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+# dotfile をコピー
 for f in .??*
 do
   if [ "$f" = ".git" ]; then
     continue
   fi
-  # .bashrc に追加の設定を反映
+  # .bashrc は直接編集しない
   if [ "$f" = ".bashrc" ]; then
     ln -snfv "$PWD"/".bashrc" "$HOME"/".bashrc.dotfiles"
     # IS_EDITTED: .bashrc を編集したかどうか 一度編集すれば良い
