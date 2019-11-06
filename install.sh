@@ -3,7 +3,8 @@
 set -e
 
 if [ "$(uname)" == "Linux" ]; then
-	apt install curl
+  apt install -y curl tree g++
+  curl -sLf https://spacevim.org/install.sh | bash
 fi
 
 # Vim のプラグインマネージャー vim-plug をインストール
@@ -14,6 +15,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 for f in .??*
 do
   if [ "$f" = ".git" ]; then
+    continue
+  fi
+  # SpaceVimに移行したため
+  if [ "$f" = ".vimrc" ]; then
     continue
   fi
   # .bashrc は直接編集しない
