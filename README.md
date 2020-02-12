@@ -4,3 +4,8 @@
 ```
 sudo ./install.sh
 ```
+
+## Vim
+```
+:PlugInstall
+```
