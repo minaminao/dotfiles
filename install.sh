@@ -1,6 +1,8 @@
 #!/bin/bash
 # エラーがあれば中断
 set -e
+#set -x
+
 
 if [ "$(uname)" == "Linux" ]; then
   apt install -y curl tree g++
@@ -34,3 +36,6 @@ do
   fi
   ln -snfv "$PWD"/"$f" "$HOME"/"$f" 
 done
+
+ln -snfv "$PWD"/".config/fish/config.fish" "$HOME"/".config/fish/config.fish"
+ln -snfv "$PWD"/".config/starship.toml" "$HOME"/".config/starship.toml"

@@ -3,3 +3,5 @@ export TERM='xterm-256color'
 
 eval "$(thefuck --alias)"
 eval "$(starship init bash)"
+
+exec fish
