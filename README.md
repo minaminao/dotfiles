@@ -2,7 +2,7 @@
 
 ## Install
 ```
-sudo ./install.sh
+curl -L raw.github.com/minaminao/dotfiles/master/install.sh | bash
 ```
 
 ## Vim
