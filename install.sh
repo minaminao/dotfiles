@@ -38,4 +38,5 @@ do
 done
 
 ln -snfv "$PWD"/".config/fish/config.fish" "$HOME"/".config/fish/config.fish"
+ln -snfv "$PWD"/".config/alacritty/alacritty.yml" "$HOME"/".config/alacritty/alacritty.yml"
 ln -snfv "$PWD"/".config/starship.toml" "$HOME"/".config/starship.toml"
