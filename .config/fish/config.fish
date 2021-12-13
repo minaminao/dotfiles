@@ -10,3 +10,5 @@ export CLOUDSDK_PYTHON=python3
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 alias bash="FISH=1 /bin/bash"
+
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
