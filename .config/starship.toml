@@ -1,3 +1,6 @@
+[character] 
+success_symbol = "[\\$](green)"
+
 [directory]
 truncation_length = 3
 
