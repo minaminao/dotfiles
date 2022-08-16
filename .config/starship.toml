@@ -1,2 +1,12 @@
 [directory]
 truncation_length = 3
+
+[gcloud]
+# https://starship.rs/ja-jp/config/#google-cloud-gcloud
+# 常に表示されてしまうため
+disabled = true
+
+[aws]
+# https://starship.rs/ja-jp/config/#aws
+# 常に表示されてしまうため
+disabled = true
