@@ -3,11 +3,16 @@
 # エラーがあれば中断
 set -e
 
-# SpaceVim をインストール
-# Ref: https://spacevim.org/quick-start-guide/
 if [ "$(uname)" == "Linux" ]; then
+  # SpaceVim をインストール
+  # Ref: https://spacevim.org/quick-start-guide/
   apt install -y curl tree g++
   curl -sLf https://spacevim.org/install.sh | bash
+fi
+
+if [ "$(uname)" == "Darwin" ]; then
+  # ~以外にログインした場合は、依然として表示される
+  touch ~/.hushlogin
 fi
 
 # dotfile をコピー
