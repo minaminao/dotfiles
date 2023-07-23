@@ -14,7 +14,10 @@ curl -L raw.github.com/minaminao/dotfiles/master/install.sh | bash
 | vscode                          | 🔴    | 更新していない          |
 | .bash_profile                   | 🔴    | fishに乗り換えた        |
 | .bashrc                         | 🔴    | fishに乗り換えた        |
-| .gemrc                          | 🔴    | 普段Rubyを触らない      |
 | .tmux.conf                      | 🟢    | Dockerで使用            |
 | .vimrc                          | 🔴    | SpaceVimに乗り換えた    |
 | .zshenv                         | 🔴    |                         |
+
+## 削除したdotfile（時系列順）
+- .config/alacritty/alacritty.yml
+- .gemrc
