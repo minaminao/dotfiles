@@ -18,3 +18,4 @@ curl -L raw.github.com/minaminao/dotfiles/master/install.sh | bash
 | .gemrc                          | 🔴    | 普段Rubyを触らない      |
 | .tmux.conf                      | 🟢    | Dockerで使用            |
 | .vimrc                          | 🔴    | SpaceVimに乗り換えた    |
+| .zshenv                         | 🔴    |                         |

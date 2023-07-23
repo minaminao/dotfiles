@@ -1,5 +1,7 @@
 set fish_greeting
 
+set -gx DENO_INSTALL /Users/minami/.deno
+
 fish_add_path $HOME/.foundry/bin
 fish_add_path $HOME/.cargo/bin # instead of `. "$HOME/.cargo/env"`
 fish_add_path /usr/local/opt/gettext/bin
@@ -9,6 +11,8 @@ fish_add_path $HOME/google-cloud-sdk/bin
 fish_add_path $HOME/.phpenv/bin
 fish_add_path $HOME/.huff/bin
 fish_add_path $HOME/zig
+fish_add_path $DENO_INSTALL/bin
+fish_add_path $HOME/.local/bin
 
 set -gx CLOUDSDK_PYTHON /Users/minami/.pyenv/versions/3.7.14/bin/python
 
@@ -26,3 +30,12 @@ set -gx RPC_ANKR_ROPSTEN https://rpc.ankr.com/eth_ropsten
 set -gx RPC_ANKR_MAINNET https://rpc.ankr.com/eth
 set -gx RPC_ANKR_GOERLI https://rpc.ankr.com/eth_goerli
 set -gx RPC_ANKR_RINKEBY https://rpc.ankr.com/eth_rinkeby
+
+export PATH="$PATH:/Users/minami/.bifrost/bin"
+
+# pnpm
+set -gx PNPM_HOME "/Users/minami/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
