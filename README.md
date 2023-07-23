@@ -6,6 +6,7 @@ curl -L raw.github.com/minaminao/dotfiles/master/install.sh | bash
 ```
 
 ## 各dotfileのメンテナンス状況
+
 | ファイル名               | 状態 | 状況詳細             |
 | ------------------------ | ---- | -------------------- |
 | .config/fish/config.fish | 🟢    | macOSで使用          |
