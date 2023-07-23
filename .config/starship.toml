@@ -1,5 +1,14 @@
+command_timeout = 1000
+
 [character] 
+# https://starship.rs/config/#character
 success_symbol = "[\\$](green)"
+error_symbol = "[\\$](red)"
+
+[git_status]
+# https://starship.rs/config/#git-status
+stashed = '📦'
+modified = '📝'
 
 [directory]
 truncation_length = 3

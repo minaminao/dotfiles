@@ -57,6 +57,6 @@ for f in .??*; do
 done
 
 ln -snfv "$PWD"/".config/fish/config.fish" "$HOME"/".config/fish/config.fish"
-ln -snfv "$PWD"/".config/alacritty/alacritty.yml" "$HOME"/".config/alacritty/alacritty.yml"
 ln -snfv "$PWD"/".config/starship.toml" "$HOME"/".config/starship.toml"
+ln -snfv "$PWD"/".config/git/ignore" "$HOME"/".config/git/ignore"
 ln -snfv "$PWD"/".SpaceVim.d/init.toml" "$HOME"/".SpaceVim.d/init.toml"

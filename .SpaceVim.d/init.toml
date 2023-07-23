@@ -4,18 +4,13 @@
 # License: GPLv3
 #=============================================================================
 
-# All SpaceVim option below [option] section
 [options]
-# set spacevim theme. by default colorscheme layer is not loaded,
-# if you want to use more colorscheme, please load the colorscheme
-# layer
+# set spacevim theme. by default colorscheme layer is not loaded, if you want to use more colorscheme, please load the colorscheme layer
 colorscheme = "gruvbox"
 background = "dark"
-# Disable guicolors in basic mode, many terminal do not support 24bit
-# true colors
+# Disable guicolors in basic mode, many terminal do not support 24bit true colors
 enable_guicolors = false
-# Disable statusline separator, if you want to use other value, please
-# install nerd fonts
+# Disable statusline separator, if you want to use other value, please install nerd fonts
 statusline_separator = "nil"
 statusline_inactive_separator = "bar"
 buffer_index_type = 4
