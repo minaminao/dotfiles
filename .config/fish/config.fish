@@ -1,18 +1,19 @@
 set fish_greeting
 
-set -gx DENO_INSTALL /Users/minami/.deno
+set -gx DENO_INSTALL $HOME/.deno
+set -gx GOPATH $HOME/go
 
 fish_add_path $HOME/.foundry/bin
 fish_add_path $HOME/.cargo/bin # instead of `. "$HOME/.cargo/env"`
 fish_add_path /usr/local/opt/gettext/bin
 fish_add_path /usr/local/opt/gnu-sed/libexec/gnubin
-fish_add_path /usr/local/Cellar/php/8.1.7/bin
 fish_add_path $HOME/google-cloud-sdk/bin
 fish_add_path $HOME/.phpenv/bin
 fish_add_path $HOME/.huff/bin
 fish_add_path $HOME/zig
 fish_add_path $DENO_INSTALL/bin
 fish_add_path $HOME/.local/bin
+fish_add_path $GOPATH/bin
 
 set -gx CLOUDSDK_PYTHON /Users/minami/.pyenv/versions/3.7.14/bin/python
 
@@ -39,3 +40,7 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
