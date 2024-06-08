@@ -14,6 +14,7 @@ fish_add_path $HOME/zig
 fish_add_path $DENO_INSTALL/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $GOPATH/bin
+fish_add_path $HOME/.docker/bin
 
 set -gx CLOUDSDK_PYTHON /Users/minami/.pyenv/versions/3.7.14/bin/python
 
