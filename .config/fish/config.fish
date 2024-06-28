@@ -16,7 +16,7 @@ fish_add_path $HOME/.local/bin
 fish_add_path $GOPATH/bin
 fish_add_path $HOME/.docker/bin
 
-set -gx CLOUDSDK_PYTHON /Users/minami/.pyenv/versions/3.7.14/bin/python
+set -gx CLOUDSDK_PYTHON /Users/minami/.pyenv/versions/3.12.3/bin/python
 
 starship init fish | source
 navi widget fish | source
@@ -45,3 +45,6 @@ end
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/minami/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/minami/Downloads/google-cloud-sdk/path.fish.inc'; end
