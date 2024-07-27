@@ -15,6 +15,8 @@ fish_add_path $DENO_INSTALL/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $GOPATH/bin
 fish_add_path $HOME/.docker/bin
+fish_add_path /usr/local/opt/postgresql@16/bin
+fish_add_path $HOME/.rye/shims # instead of `. "$HOME/.rye/env"`
 
 set -gx CLOUDSDK_PYTHON /Users/minami/.pyenv/versions/3.12.3/bin/python
 
