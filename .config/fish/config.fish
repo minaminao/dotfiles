@@ -17,23 +17,19 @@ fish_add_path $GOPATH/bin
 fish_add_path $HOME/.docker/bin
 fish_add_path /usr/local/opt/postgresql@16/bin
 fish_add_path $HOME/.rye/shims # instead of `. "$HOME/.rye/env"`
+set -x PATH "$HOME/.local/bin" $PATH
 
 set -gx CLOUDSDK_PYTHON /Users/minami/.pyenv/versions/3.12.3/bin/python
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 starship init fish | source
 navi widget fish | source
-source (pyenv init - | psub)
-thefuck --alias | source 
-eval "$(phpenv init -)"
+pyenv init - | source
+zoxide init fish | source
 
-alias ls=exa
+alias ls=eza
 alias tmux="tmux -u"
 alias bash="FISH=1 /bin/bash"
-
-set -gx RPC_ANKR_ROPSTEN https://rpc.ankr.com/eth_ropsten
-set -gx RPC_ANKR_MAINNET https://rpc.ankr.com/eth
-set -gx RPC_ANKR_GOERLI https://rpc.ankr.com/eth_goerli
-set -gx RPC_ANKR_RINKEBY https://rpc.ankr.com/eth_rinkeby
 
 export PATH="$PATH:/Users/minami/.bifrost/bin"
 

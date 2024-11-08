@@ -2,7 +2,7 @@
 
 ## Install
 ```
-curl -L raw.github.com/minaminao/dotfiles/master/install.sh | bash
+curl -L raw.github.com/minaminao/dotfiles/main/install.sh | bash
 ```
 
 ## 各dotfileのメンテナンス状況
