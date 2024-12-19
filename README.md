@@ -14,7 +14,6 @@ curl -L raw.github.com/minaminao/dotfiles/main/install.sh | bash
 | .bash_profile            | 🔴    | fishに乗り換えた     |
 | .bashrc                  | 🔴    | fishに乗り換えた     |
 | .tmux.conf               | 🟢    | Dockerで使用         |
-| .vimrc                   | 🔴    | SpaceVimに乗り換えた |
 | .zshenv                  | 🔴    |                      |
 
 ## 削除したdotfile（時系列順）
@@ -22,4 +21,5 @@ curl -L raw.github.com/minaminao/dotfiles/main/install.sh | bash
 - .config/alacritty/alacritty.yml
 - .gemrc
 - .SpaceVim.d
+- .vimrc
 - vscode
