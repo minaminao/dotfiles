@@ -29,6 +29,7 @@ zoxide init fish | source
 alias ls=eza
 alias tmux="tmux -u"
 alias bash="FISH=1 /bin/bash"
+alias vim=nvim
 
 fish_add_path $HOME/.bifrost/bin
 
