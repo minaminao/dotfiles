@@ -12,7 +12,6 @@ curl -L raw.github.com/minaminao/dotfiles/main/install.sh | bash
 | .config/fish/config.fish | 🟢    | macOSで使用          |
 | .config/starship.toml    | 🟢    | macOSで使用          |
 | .SpaceVim.d/init.toml    | 🟢    | macOSで使用          |
-| vscode                   | 🔴    | 更新していない       |
 | .bash_profile            | 🔴    | fishに乗り換えた     |
 | .bashrc                  | 🔴    | fishに乗り換えた     |
 | .tmux.conf               | 🟢    | Dockerで使用         |
