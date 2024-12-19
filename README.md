@@ -16,7 +16,7 @@ curl -L raw.github.com/minaminao/dotfiles/main/install.sh | bash
 | .tmux.conf               | 🟢    | Dockerで使用         |
 | .zshenv                  | 🔴    |                      |
 
-## 削除したdotfile（時系列順）
+## 削除したdotfiles
 - NOTE: 今後使うことが無いと判断したものは削除している
 - .config/alacritty/alacritty.yml
 - .gemrc
