@@ -11,7 +11,6 @@ curl -L raw.github.com/minaminao/dotfiles/main/install.sh | bash
 | ------------------------ | ---- | -------------------- |
 | .config/fish/config.fish | 🟢    | macOSで使用          |
 | .config/starship.toml    | 🟢    | macOSで使用          |
-| .SpaceVim.d/init.toml    | 🟢    | macOSで使用          |
 | .bash_profile            | 🔴    | fishに乗り換えた     |
 | .bashrc                  | 🔴    | fishに乗り換えた     |
 | .tmux.conf               | 🟢    | Dockerで使用         |
@@ -22,3 +21,5 @@ curl -L raw.github.com/minaminao/dotfiles/main/install.sh | bash
 - NOTE: 今後使うことが無いと判断したものは削除している
 - .config/alacritty/alacritty.yml
 - .gemrc
+- .SpaceVim.d
+- vscode

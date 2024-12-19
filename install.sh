@@ -12,10 +12,7 @@ macos() {
 
 linux() {
   set -x
-  # SpaceVim をインストール
-  # Ref: https://spacevim.org/quick-start-guide/
   apt install -y curl tree g++
-  curl -sLf https://spacevim.org/install.sh | bash
   set +x
 }
 
