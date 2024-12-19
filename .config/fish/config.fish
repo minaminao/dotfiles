@@ -3,7 +3,6 @@ set fish_greeting
 set -gx DENO_INSTALL $HOME/.deno
 set -gx GOPATH $HOME/go
 
-fish_add_path $HOME/.foundry/bin
 fish_add_path $HOME/.cargo/bin # instead of `. "$HOME/.cargo/env"`
 fish_add_path /usr/local/opt/gettext/bin
 fish_add_path /opt/homebrew/opt/gnu-sed/libexec/gnubin
@@ -19,7 +18,7 @@ fish_add_path /usr/local/opt/postgresql@16/bin
 fish_add_path $HOME/.rye/shims # instead of `. "$HOME/.rye/env"`
 set -x PATH "$HOME/.local/bin" $PATH
 
-set -gx CLOUDSDK_PYTHON /Users/minaminao/.pyenv/versions/3.12.7/bin/python
+set -gx CLOUDSDK_PYTHON $HOME/.pyenv/versions/3.12.7/bin/python
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 starship init fish | source
@@ -31,7 +30,7 @@ alias ls=eza
 alias tmux="tmux -u"
 alias bash="FISH=1 /bin/bash"
 
-export PATH="$PATH:/Users/minaminao/.bifrost/bin"
+fish_add_path $HOME/.bifrost/bin
 
 # pnpm
 set -gx PNPM_HOME "/Users/minaminao/Library/pnpm"
@@ -44,7 +43,7 @@ end
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
-fish_add_path -a /Users/minaminao/.foundry/bin
+fish_add_path -a $HOME/.foundry/bin
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/minaminao/google-cloud-sdk/path.fish.inc' ]; . '/Users/minaminao/google-cloud-sdk/path.fish.inc'; end
